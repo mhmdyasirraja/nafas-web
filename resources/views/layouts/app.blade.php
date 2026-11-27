@@ -11,7 +11,7 @@
 </head>
 
 <body class="bg-gray-50 font-sans text-gray-900 antialiased">
-    <div class="flex min-h-screen">
+    <div class="flex min-h-screen" x-data="{ sidebarOpen: false }" @keydown.escape.window="sidebarOpen = false">
         <x-sidebar />
 
         <div class="flex min-w-0 flex-1 flex-col">
