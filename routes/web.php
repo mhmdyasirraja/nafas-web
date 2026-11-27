@@ -3,9 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::redirect('/', '/dashboard');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -20,4 +18,5 @@ Route::middleware('auth')->group(function () {
     Route::view('/pemberitahuan', 'pages.notifications')->name('notifications');
     Route::view('/perangkat', 'pages.devices.index')->name('devices.index');
 });
+
 require __DIR__ . '/auth.php';
