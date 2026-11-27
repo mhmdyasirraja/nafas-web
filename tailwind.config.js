@@ -12,7 +12,17 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                sans: ['"Inter Variable"', ...defaultTheme.fontFamily.sans],
+            },
+            colors: {
+                status: {
+                    aman: '#23845B',
+                    waspada: '#A56A0B',
+                    bahaya: '#C53E42',
+                },
+                sidebar: {
+                    DEFAULT: '#0F3D2E', // PLACEHOLDER, verifikasi ke PDF Visual Specifications
+                },
             },
         },
     },
